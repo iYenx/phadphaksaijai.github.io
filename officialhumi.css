@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Google Sans Regular";
+    box-sizing: border-box;
+}
+/*head{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Google Sans Regular";
+    box-sizing: border-box;
+}*/
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #b6e3e9;
+}
+
+/* -------- navbar -------- */
+.all{
+    z-index: 2;
+    width: 100%;
+    height: 80px;
+    background: #84c9c9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    position: sticky;
+    top: 0;
+}
+.logo{
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+.hamburger{
+    display: none;
+}
+.nav-bar ul{
+    display: flex;
+}
+.nav-bar ul li a{
+    display: block;
+    color: white;
+    font-size: 17px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+.nav-bar ul li a:hover{
+    color: black;
+    background: white;
+}
+.nav-bar ul li a.active{
+    color: black;
+    background: white;
+}
+@media only screen and (max-width: 1320px){
+    header{
+        padding: 0 50px;
+    }
+}
+@media only screen and (max-width: 1100px){
+    header{
+        padding: 0 30px;
+    }
+}
+@media only screen and (max-width: 900px){
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger .line{
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 6px 0;
+    }
+    .nav-bar{
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        height: 0;
+        background: #374758;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+    .nav-bar.active{
+        height: 400px;
+    }
+    .nav-bar ul{
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    .nav-bar.active ul{
+        opacity: 1;
+    }
+    .nav-bar ul li a{
+        margin-bottom: 15px;
+    }
+}
+
+/* HOME */
+#home{
+    display: flex;
+    flex-direction: column;
+    background-color: white; 
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+   /* background: url("humi\ logo.png") no-repeat center center/cover;*/
+    height: 110%;
+    width: 100%;
+    opacity: 0.875;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+   /*border: 1px solid white;*/
+    align-items: center;
+    position: absolute;
+    top: 30%;
+}
+.headings{
+    font-family: century;
+    font-size: 5rem;
+    text-align: center;
+    margin: 40px 0px;
+}
+.hheadings{
+    font-family: century;
+    font-size: 3rem;
+    text-align: center;
+    margin: 40px 0px;
+    color: white;
+}
+.humionebg{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+    background: url("") no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+}
+
+/* ------ */
+#one{
+    background: url("humi\ logo.png") no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    height: 1000px;
+    width: 100%;
+}
+
+/* --- HUMI 01 blue --- */
+#first{
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+    width: 100%;
+    background-color: #e8f6fa;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+/* --- HUMI 02 light yellow --- */
+#two{
+    display: flex;
+    flex-direction: column;
+    padding: none;
+    height: 1000px;
+    width: 100%;
+    background-color:#ffffd0;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+/* --- HUMI 03 pink --- */
+#three{
+    display: flex;
+    flex-direction: column;
+    padding: none;
+    height: 1000px;
+    width: 100%;
+    background-color:#ffd8fa;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+/* --- HUMI 04 purple --- */
+#four{
+    display: flex;
+    flex-direction: column;
+    padding: none;
+    height: 1000px;
+    width: 100%;
+    background-color:#d0eecd;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+/* text */
+.text1{
+    font-size: 50px;
+}
+.text2{
+    font-size: 45px;
+}
